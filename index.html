@@ -11,9 +11,9 @@
       <h1 id="title">About Me</h1> 
       <p id="description">Tell me about yourself.</p>
       <form id="survey-form" action="https://formsubmit.co/f7ad0beaf62c3c34f6a0b6e236538860" method="POST">
-       <label name="name" id="name-label" for="Name">Name: <input id="name" required type="text" placeholder="Name"/><label>
-       <label name="email" id="email-label" for="email">Email: <input id="email" required type="email" placeholder="Email" />
-       <label name="age" id="number-label" for ="age">Age: <input id="number" type="number" placeholder="(optional)" min="13" max="120" />  
+       <label id="name-label" for="Name">Name: <input name="name" id="name" required type="text" placeholder="Name"/><label>
+       <label id="email-label" for="email">Email: <input name="email" id="email" required type="email" placeholder="Email" />
+       <label id="number-label" for ="age">Age: <input name="age" id="number" type="number" placeholder="(optional)" min="13" max="120" />  
     <select id="dropdown"/>
         </option>
         <option value="13">13</option>
@@ -131,7 +131,7 @@
         <label for="yes"> <input id="yes" type="checkbox" name="coding" class="inline" value="yes"/>Yes</label>
         <label for="no"> <input id="no" type="checkbox" name="coding" class="inline" value="no"/>No</label>
         <p>What do you do for fun?</p>
-        <textarea name="fun"></textarea>
+        <textarea id="fun" name="fun"></textarea>
        <input id="submit" type="submit" value="Submit"/>
 
 
